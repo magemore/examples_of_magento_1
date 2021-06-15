@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <tragento translate="title" module="tragento">
+                                <title>Tragento</title>
+                            </tragento>
+                        </children>
+                    </catalog>
+                    <sales>
+                        <children>
+                            <tragento translate="title" module="tragento">
+                                <title>Tragento</title>
+                            </tragento>
+                        </children>
+                    </sales>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <tragento translate="title" module="tragento">
+            <title>Tragento</title>
+            <sort_order>71</sort_order>
+            <children>
+                <catalog translate="title" module="tragento">
+                    <title>Tragento Listing</title>
+                    <depends><module>Magemore_Tragento</module></depends>
+                    <action>tragento/adminhtml_trademe_listing/</action>
+                    <sort_order>1</sort_order>
+                </catalog>
+                <sales translate="title" module="tragento">
+                    <title>Tragento Sales</title>
+                    <depends><module>Magemore_Tragento</module></depends>
+                    <action>tragento/adminhtml_trademe_sales/</action>
+                    <sort_order>2</sort_order>
+                </sales>
+                <logs translate="title" module="tragento">
+                    <title>Tragento Logs</title>
+                    <depends><module>Magemore_Tragento</module></depends>
+                    <action>tragento/adminhtml_trademe_sales/logs/</action>
+                    <sort_order>3</sort_order>
+                </logs>
+            </children>
+        </tragento>
+    </menu>
+</config>

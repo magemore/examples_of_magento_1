@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <customer>
+                        <children>
+                            <calltab translate="title" module="calltab">
+                                <title>Calls</title>
+                            </calltab>
+                        </children>
+                    </customer>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <customer translate="title" module="customer">
+            <title>Customers</title>
+            <sort_order>40</sort_order>
+            <children>
+                <calltab translate="title">
+                    <title>Calls</title>
+                    <depends><module>Magemore_Calltab</module></depends>
+                    <action>admincalltab/index/manager/</action>
+                    <sort_order>0</sort_order>
+                </calltab>
+            </children>
+         </customer>
+    </menu>
+</config>

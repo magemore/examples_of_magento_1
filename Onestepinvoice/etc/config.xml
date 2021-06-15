@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Magemore_Onestepinvoice>
+			<version>0.1.0</version>
+		</Magemore_Onestepinvoice>
+	</modules>
+    <global>
+        <blocks>
+            <onestepinvoice>
+                <class>Magemore_Onestepinvoice_Block</class>
+            </onestepinvoice>
+			<adminhtml>
+				<rewrite>
+					<sales_order_view>Magemore_Onestepinvoice_Block_Sales_Order_View</sales_order_view>
+				</rewrite>
+			</adminhtml>
+        </blocks>
+        <helpers>
+            <onestepinvoice>
+                <class>Magemore_Onestepinvoice_Helper</class>
+            </onestepinvoice>
+        </helpers>
+    </global>
+	<admin>
+		<routers>
+			<magemore_onestepinvoice_index>
+				<use>admin</use>
+				<args>
+					<module>Magemore_Onestepinvoice</module>
+					<frontName>adminonestepinvoice</frontName>
+				</args>
+			</magemore_onestepinvoice_index>
+		</routers>
+	</admin>
+</config>

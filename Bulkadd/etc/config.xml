@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Magemore_Bulkadd>
+			<version>0.0.1</version>
+		</Magemore_Bulkadd>
+	</modules>
+    <frontend>
+        <routers>
+            <bulkadd>
+                <use>standard</use>
+                <args>
+                    <module>Magemore_Bulkadd</module>
+                    <frontName>bulkadd</frontName>
+                </args>
+            </bulkadd>
+        </routers>
+        <layout>
+            <updates>
+                <bulkadd>
+                    <file>bulkadd.xml</file>
+                </bulkadd>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <helpers>
+            <bulkadd>
+                <class>Magemore_Bulkadd_Helper</class>
+            </bulkadd>
+        </helpers>
+    </global>
+</config>

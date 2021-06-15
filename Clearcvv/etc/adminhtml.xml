@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<clearcvv translate="title" module="clearcvv">
+								<title>Clear All CVV</title>
+							</clearcvv>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+	<menu>
+		<system>
+			<children>
+				<clearcvv translate="title">
+					<title>Clear All CVV</title>
+					<sort_order>120</sort_order>
+					<depends><module>Magemore_Clearcvv</module></depends>
+					<action>adminclearcvv/order/clearAllCVV</action>
+				</clearcvv>
+			</children>
+		</system>
+	</menu>
+</config>				
